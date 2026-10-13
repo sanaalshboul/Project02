@@ -1,0 +1,70 @@
+/* General Style */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+}
+
+/* Navigation bar */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #1f2937;
+    color: white;
+}
+
+/* Logo style */
+.logo {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a:hover {
+    color: #60a5fa;
+} 
+.nav-links a {
+    color: white;
+}
+
+/* Responsive card grid
+CSS property	Purpose
+display: flex	Enables Flexbox
+flex-direction: row	Arranges cards horizontally
+flex-wrap: wrap	Moves cards to another line when necessary
+gap: 20px	Adds space between cards
+padding: 30px	Adds inner space around the cards
+ */
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px;
+}
+
+/* card 
+flex: 1 1 20px;
+This is a shorthand property containing three values:
+- 1 — flex-grow: allows the card to grow and take up available space.
+- 1 — flex-shrink: allows the card to shrink when there isn't enough space.
+- 20px — flex-basis: sets the card's initial main-axis size to 20 pixels, before growing or shrinking.
+*/
+
+ .card {
+    flex:  1 1 20px;
+    width: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+ }
