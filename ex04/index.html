@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Box Sizing</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <h1>The Fundamental Math of Web Layout</h1>
+
+        <div class="comparison">
+
+            <div >
+                <h2>Content-Box</h2>
+
+                <div class="box content-box">
+                    Content Box
+                </div>
+
+                <p>Declared width: 200px</p>
+                <p>Padding: 20px on each side</p>
+                <p>Border: 5px on each side</p>
+                <p><strong>Actual width: 250px</strong></p>
+            </div>
+
+            <div class="example">
+                <h2>Border-Box</h2>
+
+                <div class="box border-box">
+                    Border Box
+                </div>
+
+                <p>Declared width: 200px</p>
+                <p>Padding: 20px on each side</p>
+                <p>Border: 5px on each side</p>
+                <p><strong>  width: 200px</strong></p>
+            </div>
+
+        </div>
+
+    </body>
+</html>

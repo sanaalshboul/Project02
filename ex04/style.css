@@ -1,0 +1,68 @@
+
+/* A universal CSS reset is used to remove inconsistent default spacing and make the layout easier to control across a webpage.
+*,          Selects all HTML elements, such as div, p, h1, and button.
+*::before   Selects the ::before pseudo-element of every element.
+*::after	Selects the ::after pseudo-element of every element.
+*/
+*,   
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+/* Page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 30px;
+    color: #222;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+/* list the boxes in horizontal direction and origanize the boxes' listing style */
+.comparison {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* example of using *::before */
+h2::before {
+    margin-bottom: 20px;
+    content: "★";
+}
+
+h2::after {
+    margin-bottom: 20px;
+    content: "★";
+}
+
+/* Shared box styling */
+.box {
+    width: 200px;
+    padding: 20px;
+    border: 5px solid #000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Box 1 */
+.content-box {
+    box-sizing: content-box;   /* the declared width applies only to the content: 200 + 40 padding + 10 border */
+    background-color: #f5b7b1;
+}
+
+/* Box 2 */
+.border-box {
+    box-sizing: border-box;     /* the declared width includes the content, padding, and border: 200 - 40 - 10 = 150. , the content area becomes 150px to keep the total width at 200px */
+    background-color: #a9dfbf;
+}
+
+
+
+
