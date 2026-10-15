@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-device, intial-scale= 1.0">
+        <title>Colors & Opecity</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h2>CSS Color Formats</h2>
+
+    <div class="palette">
+
+        <div class="swatch named">
+            <div class="color-box"></div>
+            <p>Named Color</p>
+            <code>Red</code>
+        </div>
+
+        <div class="swatch hex">
+            <div class="color-box"></div>
+            <p>HEX</p>
+            <code>#0000FF</code>
+        </div>
+
+        <div class="swatch rgb">
+            <div class="color-box"></div>
+            <p>RGB</p>
+            <code>rgb(0, 255, 0)</code>
+        </div>
+
+        <div class="swatch rgba">
+            <div class="color-box"></div>
+            <p>RGBA</p>
+            <code>rgba(155, 89, 182, 0.5)</code>
+        </div>
+
+    </div>
+
+
+    <h2>Comparing Transparency</h2>
+
+    <div class="comparison">
+
+        <div >
+            <h3>Using opacity: 0.5</h3>
+
+            <div class="parent opacity-parent">
+                <div class="child">Child Text</div>
+            </div>
+
+            <p>The entire element, including its child, becomes transparent.</p>
+        </div>
+
+        <div >
+            <h3>Using RGBA alpha: 0.5</h3>
+
+            <div class="parent rgba-parent">
+                <div class="child">Child Text</div>
+            </div>
+
+            <p>Only the background color is transparent. The child stays opaque.</p>
+        </div>
+
+    </div>
+    </body>
+</html>
