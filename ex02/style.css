@@ -1,0 +1,41 @@
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-bottom: 50px;
+}
+
+.rectangle {
+    width: 200px;
+    height: 100px;
+    background-color: green;
+    margin-bottom: 50px;
+}
+
+/* The radius is calculated relative to the element's dimensions.
+If the element is a square, it creates a perfect circle.
+If the element is a rectangle, it creates not perfect circle, it is necessarily a circle. */
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: aqua;
+    margin-bottom: 50px;
+}
+
+.pill {
+    width: 120px;
+    height: 70px;
+    background-color: blueviolet;
+    border-radius: 50px;
+    margin-bottom: 50px;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 100px solid purple;
+}
