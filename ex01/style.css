@@ -1,0 +1,82 @@
+/* General page styling */
+* {
+    box-sizing: border-box; /* keeps all the page conent visible from left and right */
+}
+
+
+body {
+    padding-top: 80px;
+    
+}
+
+
+/*  Fixed navigation bar */
+.navbar {
+    position: fixed;                /* Keeps the navigation bar at the top of the browser window when you scroll. */
+    top: 0;                         /* Places the navbar against the top edge of the viewport. */
+    z-index: 100;                   /* keeps it above ordinary page content. */
+    background-color: #243447;
+    color: white;
+    display: flex;                  /* Enables Flexbox and arranges the navbar's direct child elements in a row by default. */
+    justify-content: space-between; /* Places the first child at the left and the last child at the right, distributing extra space between them.*/
+    align-items: center;
+    padding: 0 30px;
+    width: 100%;                    /* Sets the navbar's width to 100% of its containing block.*/
+    height: 70px;                   /* Sets the navbar's height to 70px. */
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/*  Relative card container */
+.card-container {
+    position: relative;  /* keeps the element's original space in the page layout */
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;    /* wrap	Moves cards to another line when necessary */
+    margin-top: 30px;
+    padding: 20px;
+}
+
+
+/*  Absolute notification badge */
+.badge {
+    position: absolute; /* elements are positioned relative to their nearest positioned ancestor.*/
+    padding: 5px 10px;    
+    background-color: #e63946;
+    color: white;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Additional content to demonstrate scrolling */
+.extra-content {
+    min-height: 600px;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/*  Fixed back-to-top button */
+.back-to-top {
+    position: fixed;
+    
+    background-color: #243447;
+    color: white;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 18px;
+    text-decoration: none;
+    border-radius: 8px;
+    
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Positioning</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body id="home">
+        <!-- Fixed navigation bar -->
+        <nav class="navbar" >
+            <h2>Positioning Website</h2>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+
+    <main >
+        <h1>CSS Positioning</h1>
+        <p>
+            This page demonstrates fixed, relative, and absolute positioning.
+        </p>
+
+        <!-- Card container -->
+        <section class="card-container" id="about">
+
+            <div >
+                <!-- Absolute notification badge (An absolute notification badge anchored)-->
+                <span class="badge">New</span>
+
+                <h2>Card One</h2>
+                <p>This card demonstrates relative positioning.</p>
+            </div>
+
+            <div >
+                <h2>Card Two</h2>
+                <p>This is another example card.</p>
+            </div>
+
+        </section>
+
+        <section class="extra-content" id="contact">
+            <h2>More Content</h2>
+            <p>Scroll down to see how the fixed elements behave.</p>
+            <p>Fixed elements remain in the same position in the viewport.</p>
+            <p>Relative elements keep their normal position in the document.</p>
+            <p>Absolute elements are positioned relative to their nearest
+               positioned ancestor.</p>
+        </section>
+    </main>
+
+    <!-- Fixed back-to-top button -->
+    <a href="#home" class="back-to-top">Top</a>
+    </body>
+</html>
